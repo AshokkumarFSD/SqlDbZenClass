@@ -1,0 +1,14 @@
+//Student Table
+CREATE TABLE GuviStudents (id integer PRIMARY KEY AUTOINCREMENT, name text,email text UNIQUE, batchId text,joinedDate date, completedDate date)
+
+//Mentor Table
+CREATE TABLE GuviMentors (id integer PRIMARY KEY AUTOINCREMENT, name text,email text UNIQUE, mobile bigint)
+
+//Batch Table
+CREATE TABLE Batch (id text PRIMARY KEY,language text,mentorId integer,startDate date,completedDate date)
+
+// ZenClass Table
+CREATE TABLE ZenClass (id integer PRIMARY KEY AUTOINCREMENT, topic text,takenDate date,zoomLink text,batchId text,taskQuestionLink text,
+	startTime time,endTime time,preRead text,topicContent text)
+	
+	

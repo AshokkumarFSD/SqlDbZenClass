@@ -1,0 +1,60 @@
+//Student Table 
+INSERT into GuviStudents ( name ,email , batchId ,joinedDate, completedDate ) values("Ashok","ashok1@gmail.com","BATCH_01","02-02-2024","06-06-2024")
+INSERT into GuviStudents ( name ,email , batchId ,joinedDate, completedDate ) values("Babu","babu@gmail.com","BATCH_01","02-02-2024","06-06-2024")
+INSERT into GuviStudents ( name ,email , batchId ,joinedDate, completedDate ) values("Chandhru","chandhru@gmail.com","BATCH_01","02-02-2024","06-06-2024")
+
+INSERT into GuviStudents ( name ,email , batchId ,joinedDate, completedDate ) values("Dhanush","dhanush@gmail.com","BATCH_02","02-03-2024","06-07-2024")
+INSERT into GuviStudents ( name ,email , batchId ,joinedDate, completedDate ) values("Kamal","kamal@gmail.com","BATCH_02","02-03-2024","06-07-2024")
+INSERT into GuviStudents ( name ,email , batchId ,joinedDate, completedDate ) values("Kathir","kathir@gmail.com","","02-03-2024","06-07-2024")
+
+//Mentor Table	
+INSERT into GuviMentors ( name ,email, mobile ) values ("Sanjay","sanjay@gmail.com",9554313515)
+INSERT into GuviMentors ( name ,email, mobile ) values ("Mano","mano@gmail.com",9554313534)
+INSERT into GuviMentors ( name ,email, mobile ) values ("Mythili","mythili@gmail.com",955431982)
+
+//Batch Table
+INSERT into Batch(id,language,mentorId,startDate) values("BATCH_01","Tamil",3,"02-02-2024")
+INSERT into Batch(id,language,mentorId,startDate) values("BATCH_02","English",1,"02-03-2024")
+
+//ZenClass Table
+
+// Batch 02 insert classes
+INSERT into ZenClass ( topic ,takenDate ,zoomLink ,batchId ,taskQuestionLink ,
+startTime ,endTime ,preRead ,topicContent ) values ("JavaScript - Day -1",
+"23-02-2024","https://us06web.zoom.us/rec/share/_fompH6VcQmHk5i0KwRaafSHw_T3pdlXtm2zI0Kw6A5vRttvzy9CN_1lukZBiEjX.uHZuo2uLW027Fs0y",
+"BATCH_01","https://docs.google.com/document/d/1QznT1zM4mI6dG0TODx5Xjs1GquMoSHO3xZ1USDnVM-w/preview",
+"08:00","11:00","No preread available","Introduction to web Browser Wars DOM tree CSSOM tree,
+Browser internals - HTML parser")
+
+INSERT into ZenClass ( topic ,takenDate ,zoomLink ,batchId ,taskQuestionLink ,
+startTime ,endTime ,preRead ,topicContent ) values ("HTML & CSS- Day -3",
+"14-03-2024","https://us06web.zoom.us/rec/share/_-j4h5F66KsZRsgaeXZj9cSAI90c9iHiA3Eh9MlTqndv7eF2o_umTuD1lyyZzmSF.1ni8OIDDZikBOPeh",
+"BATCH_01","No Task","08:00","11:00","https://rvsp.github.io/CSS/
+https://web.dev/learn/css/","Intro to pseudo-classes (link, visited,hover, active)
+box model: padding, margin, border Grid")
+
+INSERT into ZenClass ( topic ,takenDate ,zoomLink ,batchId ,taskQuestionLink ,
+startTime ,endTime ,preRead ,topicContent ) values ("Async programming- Day -5",
+"01-04-2024","https://us06web.zoom.us/rec/share/EV5lywXlQXlOgdXBuJXbxE2bFD2NmMs8eq726yLHGCjY71_RYO1kYEGBqzpDhQL5.Y4IcBz_qc4oEE3nv",
+"BATCH_01","https://docs.google.com/document/d/1wa9laCdb__QIty4ZAre2-uY0OmHeq4xinhKpwjty8UI/preview",
+"08:00","11:00","No preread available","Recap of callback, Promise Topics")
+
+// Batch 02 insert classes
+INSERT into ZenClass ( topic ,takenDate ,zoomLink ,batchId ,taskQuestionLink ,
+startTime ,endTime ,preRead ,topicContent ) values ("React- Day -1",
+"02-04-2024","https://us06web.zoom.us/rec/share/5EGGcdGSWzo_lQaxJVHrbzV7Sl0MNpymyffMatOd5dyPiHf03OgWb6g5ocV03hvX.h54eGAZN1mQDQHxg",
+"BATCH_02","","08:00","11:00","http://es6-features.org/","ES5 vs Es6
+Scoping - var vs let vs const")
+
+INSERT into ZenClass ( topic ,takenDate ,zoomLink ,batchId ,taskQuestionLink ,
+startTime ,endTime ,preRead ,topicContent ) values ("React- Day -11",
+"23-04-2024","https://us06web.zoom.us/rec/share/1wc4i3Jd5HBs5sPd8amIFe-AIl1YunbUI-6eqWxLtTOJiY0uB-NFSTXDTUxQGd4a.H9U1qsbXdu9ipy5v",
+"BATCH_02","https://docs.google.com/document/d/1Kqt6Y17Fb2vy-11miMmys_lW2yUzVJat7t5xsKOJIu4/edit",
+"08:00","11:00","https://www.npmjs.com/package/formik","Front end game/CRUD to understand the importance of hooks ")
+
+INSERT into ZenClass ( topic ,takenDate ,zoomLink ,batchId ,taskQuestionLink ,
+startTime ,endTime ,preRead ,topicContent ) values ("Database- Day -1: MySQL",
+"02-05-2024","https://us06web.zoom.us/rec/share/NtgYrTgn3_SW4Sium1oZMSunW31PzTOZZknGosgEVSm8kIRqn_hXfTjJ4vdi61YK.9pb-4DIw2CwVcnpn",
+"BATCH_02","http://sqlbolt.com/ take screenshot and share",
+"08:00","11:00","https://dev.mysql.com/doc/","what is mysql?
+intro to mysql engines")

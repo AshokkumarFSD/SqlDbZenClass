@@ -1,0 +1,2 @@
+//Delete mentor mano using Id 2
+DELETE FROM GuviMentors where id=2

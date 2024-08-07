@@ -1,0 +1,33 @@
+	Guvi_Students
+		ID Primary key auto increment,
+		name text,
+		email text,
+		batch text,
+		joinedDate text,
+		completedDate text,
+		batchId text
+	
+	Guvi_Mentor
+		Id primary key auto increment,
+		name text,
+		email text,
+		mobile number,
+	
+	Batch
+		Id text primary ket,
+		language text,
+		startDate date,
+		completedDate date
+		mentorId text
+	
+	Zen_class
+		Id ,
+		topic text,
+		takenDate date,
+		zoomLink text,
+		batchId text,
+		taskQuestionLink text
+		startTime time,
+		endTime time,
+		preRead text,
+		topicContent text

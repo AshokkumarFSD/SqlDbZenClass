@@ -1,0 +1,5 @@
+// Update mobile of mentor using  mythili@gmail.com 
+UPDATE GuviMentors set mobile=9554319823 where email="mythili@gmail.com"
+
+//Update kathir from BATCH_02 to BATCH_01
+UPDATE GuviStudents set batchId = "BATCH_01" where email = "kathir@gmail.com"

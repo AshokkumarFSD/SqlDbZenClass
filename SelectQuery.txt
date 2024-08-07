@@ -1,0 +1,19 @@
+// Get number of student from BATCH_01
+SELECT count(*) as Student_count FROM GuviStudents where batchId="BATCH_01"
+
+// Get all students and their batches 
+//using join
+SELECT GuviStudents.name,GuviStudents.email,Batch.id FROM GuviStudents JOIN Batch on Batch.id=GuviStudents.batchId
+
+//Get Batch and its mentors
+//using join
+SELECT Batch.id,language,name FROM Batch JOIN GuviMentors on Batch.mentorId=GuviMentors.id
+
+//Get BATCH_01 ZenClass topic,date
+SELECT topic,takenDate,batchId FROM ZenClass where batchId="BATCH_01"
+
+//Get Preread available zen classes
+SELECT topic,takenDate,batchId,preRead FROM ZenClass where preread!="No preread available"
+
+//Get BATCH_02 ZenClass topic,date
+SELECT topic,takenDate,batchId FROM ZenClass where batchId="BATCH_02"
